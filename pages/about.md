@@ -17,13 +17,14 @@ The Japanese Language School Oral Histories is a collection of oral histories ab
 
 The University of Washington Tacoma acquired the property in 1997, which had been mostly vacant for over 50 years and had deteriorated to such a degree that it couldn’t be restored with historic integrity. 
 
+# Change this to another smaller photo, look up markdown for including an image
 {% include feature/jumbotron.html objectid="https://digitalcollections.lib.washington.edu/digital/iiif/tacoma/1374/full/full/0/default.jpg" %}
 
 Professors Lisa Hoffman and Mary Hanneman received grants from the Founder's Endowment at UW Tacoma and the Ethnic Studies in the United States Fund at UW Seattle in 2003, to collect oral histories of the former students of the school, recording more than 40 interviews. A selection of these oral histories is exhibited here. 
 
 This project was made possible through funding and support from the University of Washington Tacoma Library and the Friends of the UW Libraries. 
 
-Credits
+##  Credits
 
 This digital exhibit is made possible by: 
 
