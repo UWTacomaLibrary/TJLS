@@ -28,6 +28,13 @@ subjects-min: 1 # min size for subject cloud, too many terms = slow load time!
 subjects-stopwords: # set of subjects separated by ; that will be removed from display, e.g. boxers;boxing
 
 ##########
+# PEOPLE PAGE
+#
+people-fields: people # set of fields separated by ; to be featured in the cloud (leave blank or comment out to not generate)
+people-min: 1 # min size for subject cloud, too many terms = slow load time!
+people-stopwords: # set of subjects separated by ; that will be removed from display, e.g. boxers;boxing
+
+##########
 # LOCATIONS PAGE
 #
 locations-fields: location # set of fields separated by ; to be featured in the cloud (leave blank or comment out to not generate)
