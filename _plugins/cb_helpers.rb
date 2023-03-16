@@ -29,12 +29,8 @@ module CollectionBuilderHelperGenerator
       #####
 
       # get featured image config from "theme.yml"
-      if site.data["theme"]
-        featured_image = site.data['theme']['featured-image'] || "/assets/img/collectionbuilder-logo.png"
-      else 
-        featured_image = "/assets/img/collectionbuilder-logo.png"
-        puts color_text("Error cb_helpers: your project does not contain a '_data/theme.yml'. The template will use default values.", :yellow)
-      end
+      featured_image = site.data['theme']['featured-image'] || "/assets/img/collectionbuilder-logo.png"
+      
       if featured_image.include? "/"
         # if featured image is a link
         featured_item_src = featured_image
@@ -53,6 +49,8 @@ module CollectionBuilderHelperGenerator
             # use object_location for image items, image_small for others
             if featured_record[0]['format'] and featured_record[0]['format'].include? 'image'
               featured_item_src = featured_record[0]['object_location'] || featured_record[0]['image_small']
+            elsif featured_record[0]['display_template'] and featured_record[0]['display_template'].include? 'image'
+              featured_item_src = featured_record[0]['object_location'] || featured_record[0]['image_small']
             else
               featured_item_src = featured_record[0]['image_small']
             end
@@ -60,8 +58,14 @@ module CollectionBuilderHelperGenerator
             if featured_item_src.nil? 
               puts color_text("Error cb_helpers: Item for featured image with objectid '#{featured_image}' does not have an image url in metadata. Please check 'featured-image' in '_data/theme.yml' and choose an item that has 'object_location' or 'image_small'", :yellow)
             end
+            # use item title as alt
             featured_item_alt = featured_record[0]['title'] || site.config['title']
-            featured_item_link = "/items/" + featured_image + ".html"
+            # figure out item link
+            if featured_record[0]['parentid']
+              featured_item_link = "/items/" + featured_record[0]['parentid'] + ".html#" + featured_image
+            else
+              featured_item_link = "/items/" + featured_image + ".html"
+            end
           end
         else
           puts color_text("Error cb_helpers: configured metadata '#{site.config['metadata']}' not found in '_data'.", :yellow)
@@ -85,23 +89,28 @@ module CollectionBuilderHelperGenerator
       lib_icons = site.static_files.select { |file| file.path.include? '/assets/lib/icons/' }
       lib_icon_names = lib_icons.map { |i| i.basename }
       # get icons configured in theme.yml
-      if site.data["theme"]
-        theme_icons = site.data['theme']['icons'] || { }
-      else
-        theme_icons = { } 
-      end
+      theme_icons = site.data['theme']['icons'] || { }
       # set default values for icons used in template in case nothing is configured
       if !theme_icons['icon-image']
         theme_icons['icon-image'] = "image"
       end
       if !theme_icons['icon-audio']
-        theme_icons['icon-audio'] = "file-play"
+        theme_icons['icon-audio'] = "soundwave"
       end
       if !theme_icons['icon-video']
         theme_icons['icon-video'] = "film"
       end
       if !theme_icons['icon-pdf']
         theme_icons['icon-pdf'] = "file-richtext"
+      end
+      if !theme_icons['icon-record']
+        theme_icons['icon-record'] = "file-text"
+      end
+      if !theme_icons['icon-compound-object']
+        theme_icons['icon-compound-object'] = "collection"
+      end
+      if !theme_icons['icon-multiple']
+        theme_icons['icon-multiple'] = "postcard"
       end
       if !theme_icons['icon-default']
         theme_icons['icon-default'] = "file-earmark"
