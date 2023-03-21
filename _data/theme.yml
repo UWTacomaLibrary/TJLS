@@ -35,6 +35,20 @@ people-min: 1 # min size for subject cloud, too many terms = slow load time!
 people-stopwords: # set of subjects separated by ; that will be removed from display, e.g. boxers;boxing
 
 ##########
+# ORGANIZATIONS PAGE
+#
+organizations-fields: organizations # set of fields separated by ; to be featured in the cloud (leave blank or comment out to not generate)
+organizations-min: 1 # min size for subject cloud, too many terms = slow load time!
+organizations-stopwords: # set of subjects separated by ; that will be removed from display, e.g. boxers;boxing
+
+##########
+# PLACES PAGE
+#
+places-fields: places # set of fields separated by ; to be featured in the cloud (leave blank or comment out to not generate)
+places-min: 1 # min size for subject cloud, too many terms = slow load time!
+places-stopwords: # set of subjects separated by ; that will be removed from display, e.g. boxers;boxing
+
+##########
 # LOCATIONS PAGE
 #
 locations-fields: location # set of fields separated by ; to be featured in the cloud (leave blank or comment out to not generate)
@@ -66,7 +80,7 @@ locations-stopwords: united states # set of subjects separated by ; that will be
 # 
 # add metadata fields for export in data downloads (tip: paste in first row of csv)
 # comma delimited list, reference url is automatic
-metadata-export-fields: "title,creator,date,description,subject,location,latitude,longitude,source,identifier,type,format,language,rights,rightsstatement"
+metadata-export-fields: "title,creator,date,description,subject,location,people,organizations,places,source,identifier,type,format,language,rights,rightsstatement"
 # generate a facets list for given fields, comma delimited
 metadata-facets-fields: "subject,creator,format"
 
