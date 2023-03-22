@@ -27,10 +27,10 @@
           searchResults += '<option class=text-truncate" style="max-width: 250px;" value="'+ i +'">Line ' + i + ' -- ' + itemcontents.innerHTML.substring(0,125) + '...</option>';
           itemcontents.innerHTML = itemcontents.innerHTML.replace(input, "<span class='text-danger'>" + input + "</span>");
           var rightnum = i + 1;
-          var rectal = "rect" + rightnum;
+         {% if site.data.filters %} var rectal = "rect" + rightnum;
           console.log(rectal);
           document.getElementById(rectal).classList.add("hilite");
-          vizFilter('hilite');
+          vizFilter('hilite'); {% endif %}
           } else { 
         }
       }
