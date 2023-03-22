@@ -47,7 +47,7 @@ endcapture -%}
     </div>
     {% if page.image_small or page.image_thumb %}
     <div class="col-md-3 meta{% if av == 'vimeo' or av == 'youtube'%} d-none d-md-block{% endif %}">
-     <!-- IMAGE WASN'T WORKING <img class="img-thumbnail timeline-thumb" src="{{page.image_small | default: page.image_thumb }}" alt="{page.title}"> -->
+     <img class="img-thumbnail timeline-thumb" src="{{page.image_small | default: page.image_thumb | relative_url }}" alt="{{page.title}}"> 
     </div>
     {% endif %}
   </div>
