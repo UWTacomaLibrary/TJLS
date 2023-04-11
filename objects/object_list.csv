@@ -1,0 +1,15 @@
+object_location,image_small,image_thumb
+/objects/ctakaoka_image.JPG,/objects/small/ctakaoka_image_sm.jpg,/objects/thumbs/ctakaoka_image_th.jpg
+/objects/hozaki_image.JPG,/objects/small/hozaki_image_sm.jpg,/objects/thumbs/hozaki_image_th.jpg
+/objects/htorimaru_image.JPG,/objects/small/htorimaru_image_sm.jpg,/objects/thumbs/htorimaru_image_th.jpg
+/objects/hyoshioka_image.JPG,/objects/small/hyoshioka_image_sm.jpg,/objects/thumbs/hyoshioka_image_th.jpg
+/objects/jhata_image.JPG,/objects/small/jhata_image_sm.jpg,/objects/thumbs/jhata_image_th.jpg
+/objects/jhayashi_image.JPG,/objects/small/jhayashi_image_sm.jpg,/objects/thumbs/jhayashi_image_th.jpg
+/objects/jkawahara_image.JPG,/objects/small/jkawahara_image_sm.jpg,/objects/thumbs/jkawahara_image_th.jpg
+/objects/jseto_image.JPG,/objects/small/jseto_image_sm.jpg,/objects/thumbs/jseto_image_th.jpg
+/objects/khorita_image.JPG,/objects/small/khorita_image_sm.jpg,/objects/thumbs/khorita_image_th.jpg
+/objects/mtakasugi_image.JPG,/objects/small/mtakasugi_image_sm.jpg,/objects/thumbs/mtakasugi_image_th.jpg
+/objects/object_list.csv,,
+/objects/pyoshiaki_image.JPG,/objects/small/pyoshiaki_image_sm.jpg,/objects/thumbs/pyoshiaki_image_th.jpg
+/objects/shattori_image.JPG,/objects/small/shattori_image_sm.jpg,/objects/thumbs/shattori_image_th.jpg
+/objects/ttaniguichi_image.JPG,/objects/small/ttaniguichi_image_sm.jpg,/objects/thumbs/ttaniguichi_image_th.jpg
