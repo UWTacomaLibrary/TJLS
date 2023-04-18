@@ -7,16 +7,16 @@ layout: page
   <div class="col-md-8">
 
     {% include index/description.html %}
-    {% include index/carousel.html title="Sample Items" %}
+    {% include index/carousel.html title="Sample Oral Histories" %}
     
   </div>
   <div class="col-md-4">  
 
-    {% include index/time.html %}
-
-    {% include index/featured-terms.html field="subject" title="Top Subjects" btn-color="primary" %}
+    {% include index/featured-terms.html field="organizations" title="Organizations Mentioned" btn-color="primary" %}
 
     {% include index/featured-terms.html field="location" title="Locations" btn-color="outline-secondary" %}
+
+    {% include feature/card.html header="Resources for researching Japanese American Experiences in the PNW" text="[Densho](https://densho.org/)<br> Tamiko's Project<br> [Tacoma Community History Project](https://content.lib.washington.edu/tacomacommweb/)" objectid="largegroup1934" centered=true %}
     
     {% include index/objects.html %}
 
