@@ -21,7 +21,7 @@ The University of Washington Tacoma acquired the property in 1997, which had bee
 
 {% include feature/image.html objectid="building1979" %}
 
-Professors Lisa Hoffman and Mary Hanneman received grants from the Founder's Endowment at UW Tacoma and the Ethnic Studies in the United States Fund at UW Seattle in 2003, to collect oral histories of the former students of the school, recording more than 40 interviews. A selection of these oral histories is exhibited here. 
+Professors Lisa Hoffman and Mary Hanneman received grants from the Founder's Endowment at UW Tacoma and the Ethnic Studies in the United States Fund at UW Seattle in 2003, to collect oral histories of the former students of the school, recording more than 40 interviews. These oral histories make up the foundation of their book [Becoming Nisei: Japanese American Urban Lives in Prewar Tacoma](https://uwapress.uw.edu/book/9780295748221/becoming-nisei/), which shares stories of growing up in Japanese American Tacoma before the incarceration. Recording these early twentieth-century lives counteracts the structural forgetting and erasure of prewar histories in both Tacoma and many other urban settings after World War II. A selection of the oral histories are shared with you here. 
 
 {% include feature/video.html objectid="booktrailer" width="75" %}
 
