@@ -24,7 +24,8 @@
 {% if include.carousel-type == "small" %}
 {%- assign carousel-items = site.data[site.metadata] | where_exp: 'item','item.objectid' | where_exp: "item","item.image_small" -%}
 {% else %}
-{%- assign carousel-items = site.data[site.metadata] | where_exp: 'item','item.objectid' | where_exp: "item","item.image_thumb" -%}
+{%- assign carousel-items = site.data[site.metadata] | where_exp: 'item','item.objectid' | where_exp: "item","item.image_thumb" | where_exp: 'item','item.display_template == "transcript"' -%}
+
 {% endif %}
 
 {%- comment -%}
