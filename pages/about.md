@@ -8,7 +8,6 @@ credits: true
 # Look in _includes/feature for options to easily add features to the page
 ---
 
-{% include feature/nav-menu.html sections="About The Japanese Language School Oral Histories" %}
 
 {% include feature/image.html objectid="https://digitalcollections.lib.washington.edu/digital/iiif/panoram/121/full/full/0/default.jpg" width="100" alt="group of students and faculty in front of the Japanese Language School"%}
 
