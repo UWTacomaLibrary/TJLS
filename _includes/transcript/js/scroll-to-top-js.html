@@ -10,11 +10,16 @@
             document.getElementById("scroll-to-top").style.display = "block";
             triggerElement.setAttribute('style', 'margin-top:' + topheight + 'px');
                document.getElementById('object-meta').classList.add('iframe-wrapper');
+               document.getElementById('object-meta').classList.add('d-none');
+               document.getElementById('object-meta').classList.add('d-lg-block');
+
                 }
         //BOTTOM
         else {
             document.getElementById("scroll-to-top").style.display = "none";
                document.getElementById('object-meta').classList.remove('iframe-wrapper');
+               document.getElementById('object-meta').classList.remove('d-none');
+               document.getElementById('object-meta').classList.remove('d-lg-block');
               triggerElement.removeAttribute('style');
     
         }

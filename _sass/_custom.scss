@@ -42,21 +42,6 @@
     .meta {
         display: none;
     }
-
-    @media screen and (max-width: 576px) {
-        bottom: 0px;
-        left: 0px;
-        height: auto;
-        width: 100px;
-
-        .meta {
-            display: none;
-        }
-
-        .vizdiv, #colorViz, .title {
-            display: none;
-        }
-    }
 }
 
 .anchored-highlight p.words {
